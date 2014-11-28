@@ -183,7 +183,7 @@ public class main {
         if (sah != null){ // daca este in sah
             // gasim si returnam miscarea care il scoate din sah
             Tabla x;
-            ArrayList<Mutare> mutari_sah = new ArrayList<>();
+            ArrayList<Mutare> mutari_sah = new ArrayList<Mutare>();
             for (Mutare i:mutari){
                 if((t.getTabla()[i.getFrom().getX()][i.getFrom().getY()] instanceof Rege) && (Math.abs(i.getFrom().getY() - i.getWhere().getY()) == 2))
                     continue;
